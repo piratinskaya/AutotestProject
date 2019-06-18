@@ -12,11 +12,20 @@ import java.util.concurrent.TimeUnit;
 
 public class TestSettings {
 
-    public static WebDriver driver;
+    static WebDriver driver;
 
+    private static String PATH = "C:\\Users\\yuliy_000\\Desktop\\Test_project-master\\AutotestProject\\screen";
+
+    static WebDriver getDriver() {
+        return driver;
+    }
+
+    static String getPATH() {
+        return PATH;
+    }
 
     @BeforeMethod
-    public void preparation() {
+    public void beforeTest() {
         System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");

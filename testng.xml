@@ -5,4 +5,15 @@
             <class name="ru.beru.LoginTest" />
         </classes>
     </test>
+    <test name="City">
+        <classes>
+            <class name="ru.beru.ChooseCityTest" />
+        </classes>
+    </test>
+    <test name="Toothbrushes">
+        <classes>
+            <class name="ru.beru.BuyingToothbrushesTest" />
+        </classes>
+    </test>
+
 </suite>
